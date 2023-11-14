@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script >
+let users = [
+{
+name: "Eva",
+age: 18,
+isMarried : true ,
+wifes: [ "daler " , "lisiy " , " abu " ]
+},
+{
+name: "ali",
+age: 14,
+isMarried : true ,
+wifes : ["Eva ", "Oksanna  " , "Susanna " ]
+},
+{
+name: "Hozanin",
+age: 12,
+isMarried : false ,
+},
+{
+name: "Habibi",
+age: 22,
+isMarried : true ,
+wifes : ["Eva "  ," Oksanna "," Susanna" , " Emma" , " Olivia" ," Isabel" , "Sophia" ]
+},
+{
+name: "Evaa",
+age: 18,
+isMarried : true ,
+wifes: [ 'daler ' ]
+},
+
+]
+let obrezaniye = [ ]
+let molodes = [ ]
+
+for(let user of users){
+
+    if(user.wifes.length > 1 && user.age < 18){
+
+          obrezaniye.push(user)
+
+    
+       }else{
+        molodes.push(user)
+       }
+
+
+    }
+
+
+console.log(obrezaniye);
+
+  
+        </script>
+</body>
+</html>
